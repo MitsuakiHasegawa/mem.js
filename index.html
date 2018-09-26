@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>課題サンプル</title>
+  <link href="http://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+  <script src="./js/script.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="mainVisual">
+      <img src="http://placehold.jp/960x200.png" alt="Dummy">
+    </div>
+    <nav class="anchor">
+      <ul class="clearfix">
+        <li><a href="#section01">タブ切り替え</a></li>
+        <li><a href="#section02">アコーディオン</a></li>
+        <li><a href="#section03">ajax</a></li>
+        <li><a href="#section04">スライダー</a></li>
+      </ul>
+    </nav>
+    <section id="section01">
+      <div class="tabSet">
+        <!-- 後でaタグにする -->
+        <ul>
+          <li class="tabBtn js-tabActive" data-tab-index="#tabContent01">タブ01</li>
+          <li class="tabBtn" data-tab-index="#tabContent02">タブ02</li>
+          <li class="tabBtn" data-tab-index="#tabContent03">タブ03</li>
+        </ul>
+      </div>
+      <div class="tabContent">
+        <div id="tabContent01" class="tabContentInner js-tabContentActive">
+          <p>あああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+        </div>
+        <div id="tabContent02" class="tabContentInner">
+          <p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
+        </div>
+        <div id="tabContent03" class="tabContentInner">
+          <p>ううううううううううううううううううううううううううううううううううううううううううううううううううう</p>
+        </div>
+      </div>
+    </section>
+    <section id="section02">
+      <dl class="accordion">
+        <dt>アコーディオンが開くよ</dt>
+        <dd>ああああああ</dd>
+        <dd>いいいいいい</dd>
+        <dd>うううううう</dd>
+      </dl>
+    </section>
+    <section id="section03">
+      <p class="ajax"><a href="#">clickしたらjsonのデータを表示するよ</a></p>
+    </section>
+    <section id="section04" style="height: 800px;">
+      <p>チャレンジ課題！<br>プラグインなしでスライダーを作ってみよう</p>
+    </section>
+    <div class="pageTop"><a href="#container"></a></div>
+  </div>
+</body>
+</html>
